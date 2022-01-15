@@ -4,6 +4,9 @@ const express = require('express');
 
 const app = express();
 
+//  A type of middleware - it is a function but has object like properties
+app.use(express.static('public'));
+
 app.get('/', function (req, res) {
   const htmlFilePath = path.join(__dirname, 'views', 'index.html');
   res.sendFile(htmlFilePath);

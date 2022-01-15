@@ -3,7 +3,13 @@
     "name":"Test",
     "address":"Test 1234",
     "cuisine":"Thai",
-    "website": "https://mytest.com",
+    "website":"https://mytest.com",
     "description":"The Best in Town!"
+    },
+    {"name":"Test 2",
+      "address":"Test 2 5432",
+      "cuisine":"American",
+      "website":"https://mytest2.com",
+      "description":"Delicious as usual!"
     }
-  ]
+] 

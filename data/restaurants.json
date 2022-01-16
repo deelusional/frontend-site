@@ -1,1 +1,9 @@
-[{"name":"Test","address":"Test 1234","cuisine":"Thai","website":"https://mytest.com","description":"The Best in Town!"},{"name":"Test 2","address":"Test 2 5432","cuisine":"American","website":"https://mytest2.com","description":"Delicious as usual!"},{"name":"Test Restaurant 3","address":"Test 3 9876 Test St","cuisine":"Mexican","website":"htpps://mytest3.com","description":"Absolutely yummified!"}]
+[{"name":"Test","address":"Test 1234","cuisine":"Thai","website":"https://mytest.com","description":"The Best in Town!"},{"name":"Test 2","address":"Test 2 5432","cuisine":"American","website":"https://mytest2.com","description":"Delicious as usual!"},{"name":"Test Restaurant 3","address":"Test 3 9876 Test St","cuisine":"Mexican","website":"htpps://mytest3.com","description":"Absolutely yummified!"},
+  {"name":"Sugarcane Restaurant",
+    "address":"5439 Sweet Road",
+    "cuisine":"Thai","
+    website":
+    "https://mytest4.com",
+    "description":"This restaurant is really nice. The food is great."
+    }
+  ]

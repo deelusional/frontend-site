@@ -22,14 +22,17 @@ app.get('/restaurants', function (req, res) {
   const fileData = fs.readFileSync(filePath);
   const storedRestaurants = JSON.parse(fileData);
 
-  res.render('restaurants', { numberOfRestaurants: storedRestaurants.length, restaurants: storedRestaurants });
+  res.render('restaurants', {
+    numberOfRestaurants: storedRestaurants.length,
+    restaurants: storedRestaurants
+  });
 });
 
 // The colon after restaurants/ : defines a dynamic route
-app.get('/restaurants/:id', function (req, res) {
+app.get('/restaurants/:id', function(req, res){
   const restaurantId = req.params.id;
-  res.render('restaurant-detail', { rid: restaurantId });
- });
+  res.render('restaurants-detail', { rid: restaurantId });
+});
  
 app.get('/recommend', function (req, res) {
   res.render('recommend');

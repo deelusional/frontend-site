@@ -5,6 +5,7 @@ const express = require('express');
 const uuid = require('uuid');
 
 const resData = require('./util/restaurant-data');
+const defaultRoutes = require('./routes/default');
 
 const app = express();
 
@@ -15,13 +16,11 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 app.use(express.urlencoded({extended: false}));
 
-app.get('/', function (req, res) {
-  res.render('index');
- });
+app.use('/', defaultRoutes);
 
 app.get('/restaurants', function (req, res) {
   const storedRestaurants = resData.getStoredRestuarants();
-  
+
   res.render('restaurants', {
     numberOfRestaurants: storedRestaurants.length,
     restaurants: storedRestaurants
